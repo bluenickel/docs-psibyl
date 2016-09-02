@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>REST Integration - Psibyl</title>
+      
+      
+      
+        <link rel="canonical" href="https://www.bluenickel.co.za/integration/psibyl-integration-rest/">
+      
+      
+        <meta name="author" content="Blue Nickel Solutions">
+      
+    
+    <meta property="og:url" content="https://www.bluenickel.co.za/integration/psibyl-integration-rest/">
+    <meta property="og:title" content="Psibyl">
+    <meta property="og:image" content="https://www.bluenickel.co.za/integration/psibyl-integration-rest//../../images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Psibyl">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../../images/logo.png">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-indigo palette-accent-light-blue">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Integration <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        REST Integration
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../../images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Psibyl
+          <span class="version">
+            2.0.0
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Installation</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Basic Installation" href="../../installation/basic-installation/">
+      Basic Installation
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Integration</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Direct Integration" href="../psibyl-integration-direct/">
+      Direct Integration
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="REST Integration" href="./">
+      REST Integration
+    </a>
+    
+      
+        
+      
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Service Integration" href="../psibyl-integration-service/">
+      Service Integration
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h2 id="psibyl-integration-restweb-api">Psibyl Integration (REST/Web API)</h2>
+<p>You can facilitate the control of a Psibyl controller using a RESTful Web API. This is the simplest and easiest way to integrate Psibyl with control platforms that are not based on the .Net Framework.</p>
+<div class="toc">
+<ul>
+<li><a href="#psibyl-integration-restweb-api">Psibyl Integration (REST/Web API)</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#create-a-controller">Create a Controller</a><ul>
+<li><a href="#managing-a-controller">Managing a Controller</a></li>
+<li><a href="#executing-a-controller">Executing a controller</a></li>
+<li><a href="#updating-a-controllers-model">Updating a Controller's Model</a></li>
+<li><a href="#updating-a-controllers-cv-mv-and-disturbance-values">Updating a Controller's CV, MV and Disturbance Values</a></li>
+<li><a href="#updating-a-controllers-gain">Updating a Controller's Gain</a><ul>
+<li><a href="#update-mv-gain">Update MV Gain</a></li>
+</ul>
+</li>
+<li><a href="#sample-postman">Sample (Postman)</a><ul>
+<li><a href="#create-controller">Create Controller</a></li>
+<li><a href="#start-controller">Start Controller</a></li>
+<li><a href="#update-a-controller">Update a controller</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<p>At the core of Psibyl is a Web server which provides access to and storage of all MPC models. Any interaction with Psibyl requires that the Psibyl Server is running. Typically, control is done using a .Net library, provided with Psibyl, which is integrated directly into the control/execution platform (see Psibyl Controller Integration (.Net)). The Psibyl server hosts and provides access to this same API over a simple REST interface. Since any interprocess communication, from a non .Net process to a .Net process, is likely to be done with a TCP/IP protocol, it may be desirable to interact directly with the web server over TCP/IP and HTTP rather than having to write an additional interface. The following sections describe how to acheive this.</p>
+<h1 id="create-a-controller">Create a Controller</h1>
+<p>The following URL demonstrates how to create a controller hosted on the Psibyl Server.</p>
+<p>GET -</p>
+<p><code>http://localhost:9000/api/controller/createcontroller?modelid={modelid}</code></p>
+<p>The URL requires only the {modelid} which is an integer, identifying the model which will be used to create the controller. The following shows an example. </p>
+<p>GET -</p>
+<p><code>http://localhost:9000/api/controller/createcontroller?modelid=1</code></p>
+<p>When the request is completed you should receive a response containing something similar to the following JSON. Take note of the "Id" field. You will need this for all subsequent requests.</p>
+<pre><code>
+{
+
+  &quot;$id&quot;:&quot;1&quot;,
+
+  &quot;Id&quot;:&quot;302f5555-24fd-4d66-8335-2ae58c9b2119&quot;,
+
+  &quot;Model&quot;:
+
+  {
+
+    ... 
+
+  },
+
+  &quot;ExecutionState&quot;:0,
+
+  &quot;Lookup&quot;:null,
+
+  &quot;CVConstraintStrategy&quot;:1,
+
+  &quot;QPSolver&quot;:null,
+
+  &quot;QPMaxIterations&quot;:50,
+
+  &quot;QPTollerance&quot;:0.0001,
+
+  &quot;PredictedCVsOL&quot;:null,
+
+  &quot;PredictedCVsCL&quot;:null,
+
+  &quot;ModelId&quot;:1,
+
+  &quot;CurrentDiagnosticIteration&quot;:null
+
+}
+
+</code></pre>
+
+<h2 id="managing-a-controller">Managing a Controller</h2>
+<p>Once a controller has been created and you have the controller id, you can use the id to start and stop the controller. </p>
+<p>To start the controller, use the following URL. This will initialize the controller, making it ready for execution. </p>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/Start/302f5555-24fd-4d66-8335-2ae58c9b2119</code></p>
+<p>To stop the controller you can use the following URL. Once the controller has been stopped you will no longer be able to execute it. </p>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/Stop/302f5555-24fd-4d66-8335-2ae58c9b2119</code></p>
+<p>Both requests will return a 'true' if the request succeeded. </p>
+<p>If the request failed due to an incorrect controller id, you will receive the following error response.</p>
+<pre><code>
+{
+
+  &quot;Id&quot;:0,
+
+  &quot;Message&quot;:&quot;An error occured&quot;,
+
+  &quot;ExceptionMessage&quot;:&quot;Unable to find a controller for given Id '1492b7b4-fcb7-40e0-9a83-bb5caf39318d' - Correlation Id: 1eb4db28-0376-4528-8532-eb72f8ae6e2f&quot;,
+
+  &quot;ExceptionType&quot;:&quot;Psibyl.Service.CorrelationException&quot;,
+
+  &quot;StackTrace&quot;:null
+
+}
+
+</code></pre>
+
+<p>When a controller has been stopped, you may wish to remove it from the server. You can do this with the following URL. </p>
+<p>DELETE -</p>
+<p><code>http://localhost:9000/api/controller/delete/302f5555-24fd-4d66-8335-2ae58c9b2119</code></p>
+<h2 id="executing-a-controller">Executing a controller</h2>
+<p>Once a controller is started you may execute it by using the Execute request. This must be down at each execution interval and the current values must be provided. Also, as most REST clients execute asynchronously, you must make sure that you have received a response for the current iteration before sending the Execute request again. I.e. executes should be synchronous. The following is the URL used to perform an execution of the controller. </p>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/Execute/302f5555-24fd-4d66-8335-2ae58c9b2119</code></p>
+<p>The following JSON must also be provided with this request. This describes the current values to give to the controller for a 1 x 1 model with no disturbances.</p>
+<pre><code>
+{
+
+  &quot;CVs&quot;:[0],
+
+  &quot;SPs&quot;:[0],
+
+  &quot;MVs&quot;:[0],
+
+  &quot;DVs&quot;:[]
+
+}
+
+</code></pre>
+
+<p>The following is an example of a current values for a 2 x 2 model with 1 disturbace.</p>
+<pre><code>
+{
+
+  &quot;CVs&quot;:[1,2],
+
+  &quot;SPs&quot;:[3,4],
+
+  &quot;MVs&quot;:[3,4],
+
+  &quot;DVs&quot;:[1]
+
+}
+
+</code></pre>
+
+<p>The response you will recieve from an Execute request will look as follows.</p>
+<pre><code>
+{
+
+  &quot;$id&quot;:&quot;1&quot;,
+
+  &quot;Result&quot;:
+
+  {
+
+    &quot;$id&quot;:&quot;2&quot;,
+
+    &quot;$values&quot;:[0.8331979999999999]
+
+  },
+
+  &quot;Quality&quot;:true,
+
+  &quot;ErrorId&quot;:0
+
+}
+
+</code></pre>
+
+<h2 id="updating-a-controllers-model">Updating a Controller's Model</h2>
+<p>In order to update the model of a controller, for example, changing weights, constraints and limits. You may use the UpdateModel request. The URL looks as follows. </p>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/UpdateModel/302f5555-24fd-4d66-8335-2ae58c9b2119</code></p>
+<p>You must provide the entire model in JSON to the request. This is best achieved by retrieving the model and then modifying the desired parameters. </p>
+<p>The following URL demonstrates how to retrieve an MPC model. </p>
+<p>GET -</p>
+<p><code>http://localhost:9000/api/mpcmodel/Get/1</code></p>
+<p>The response, which has been shortened for display purposes, should look as follows.</p>
+<pre><code>
+{
+
+  &quot;$id&quot;:&quot;1&quot;,
+
+  &quot;Disturbances&quot;:
+
+  {
+
+    &quot;$id&quot;:&quot;2&quot;,
+
+    &quot;$values&quot;:[] 
+
+  },
+
+  &quot;InputCVs&quot;:
+
+  {
+
+    ...
+
+  },
+
+  &quot;OutputMVs&quot;:
+
+  {
+
+    ...
+
+  },
+
+  &quot;Id&quot;:1,
+
+  &quot;Name&quot;: &quot;Demo Model&quot;,
+
+  &quot;LastUpdated&quot;:&quot;\/Date(1427714090680+0200)\/&quot;,
+
+  &quot;ModelExecutionState&quot;:0,
+
+  &quot;PredictionHorizon&quot;:118,
+
+  &quot;ControlHorizon&quot;:36,
+
+  &quot;ModelHorizon&quot;:118,
+
+  &quot;SampleInterval&quot;:5,
+
+  &quot;ConstraintSoftening&quot;:true,
+
+  &quot;DateCreated&quot;:&quot;\/Date(1427714090680+0200)\/&quot;,
+
+  &quot;DateModified&quot;:&quot;\/Date(1427878418670+0200)\/&quot;,
+
+  &quot;QPMaxIterations&quot;:50,
+
+  &quot;QPTolerance&quot;:0.0001,
+
+  &quot;SysIDResults&quot;:
+
+  {
+
+    ...
+
+  },
+
+  &quot;LastSampleInterval&quot;:10
+
+}
+
+</code></pre>
+
+<p>Once the changes have been made, they must be posted back to the Update Model method using the format above.</p>
+<h2 id="updating-a-controllers-cv-mv-and-disturbance-values">Updating a Controller's CV, MV and Disturbance Values</h2>
+<p>In order to update the values of a controller, you may use either the UpdateInputCVValues, UpdateOutputMVValues or the UpdateDisturbanceValues request. The URL for UpdateInputCVValues looks as follows. </p>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/UpdateInputCVValues?controllerId=302f5555-24fd-4d66-8335-2ae58c9b2119?property=MVUpperLimits</code></p>
+<p>The following JSON must also be provided with this request. This describes the current values to give to the controller for a 1 x 1 model.</p>
+<pre><code>
+{
+
+  &quot;MVUpperLimits&quot;:[1]
+
+} 
+
+</code></pre>
+
+<p>The following is an example of a current values for a 2 x 2 model.</p>
+<pre><code>
+{
+
+  &quot;MVUpperLimits&quot;:[1,1]
+
+}
+
+</code></pre>
+
+<h2 id="updating-a-controllers-gain">Updating a Controller's Gain</h2>
+<p>In order to update the gain of a controller, you may use the UpdateSpecificGain request. The URL looks as follows. </p>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/UpdateSpecificGain?controllerId=302f5555-24fd-4d66-8335-2ae58c9b2119?inputCVId=1?outputMVId=1?disturbanceId=1?gain=1</code></p>
+<h3 id="update-mv-gain">Update MV Gain</h3>
+<p>POST -</p>
+<p><code>http://localhost:9000/api/controller/UpdateEnabledStates?controllerId=302f5555-24fd-4d66-8335-2ae58c9b2119</code></p>
+<p>The following JSON must be provided with this request. This describes the current values to give to the controller for a 2 x 2 model.</p>
+<pre><code>
+{
+
+  &quot;gainValues&quot;:[[1,1],[1,1]]
+
+}
+
+</code></pre>
+
+<h2 id="sample-postman">Sample (Postman)</h2>
+<p>Postman is a graphical REST client available from the Chrome browser store. This sample shows you how to use Postman to interact with a Psibyl controller.</p>
+<h3 id="create-controller">Create Controller</h3>
+<p><img alt="Create Controller" src="../resources/create-controller.png" /></p>
+<h3 id="start-controller">Start Controller</h3>
+<p><img alt="Start Controller" src="../resources/start-controller.png" /></p>
+<h3 id="update-a-controller">Update a controller</h3>
+<p><img alt="Update Controller" src="../resources/update-controller.png" /></p>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 Blue Nickel Solutions &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../psibyl-integration-direct/" title="Direct Integration">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Direct Integration
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../psibyl-integration-service/" title="Service Integration">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Service Integration
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

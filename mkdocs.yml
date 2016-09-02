@@ -1,0 +1,28 @@
+site_name: Psibyl
+site_description: 'Psibyl - Model Predictive Control'
+site_author: 'Blue Nickel Solutions'
+site_url: 'https://www.bluenickel.co.za'
+
+theme: material
+
+# Copyright
+copyright: 'Copyright (c) 2016 Blue Nickel Solutions'
+
+pages:
+- Home: 'index.md'
+- Installation:
+    - 'Basic Installation': 'installation/basic-installation.md'
+- Integration: 
+        - 'Direct Integration': 'integration/psibyl-integration-direct.md'
+        - 'REST Integration': 'integration/psibyl-integration-rest.md'
+        - 'Service Integration': 'integration/psibyl-integration-service.md'
+
+# Options
+extra:
+    version: '2.0.0'
+    logo: 'images/logo.png'
+    palette:
+        primary: 'indigo'
+        accent: 'light blue'
+    author: 
+        web: 'http://www.bluenickel.co.za'

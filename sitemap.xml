@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://www.bluenickel.co.za/</loc>
+     <lastmod>2016-09-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://www.bluenickel.co.za/installation/basic-installation/</loc>
+     <lastmod>2016-09-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://www.bluenickel.co.za/integration/psibyl-integration-direct/</loc>
+     <lastmod>2016-09-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://www.bluenickel.co.za/integration/psibyl-integration-rest/</loc>
+     <lastmod>2016-09-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://www.bluenickel.co.za/integration/psibyl-integration-service/</loc>
+     <lastmod>2016-09-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>
